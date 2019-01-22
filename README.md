@@ -1,6 +1,13 @@
 v4l2grab
 ========
 
+## quick build on ubuntu 1804
+
+sudo apt install libjpeg-dev libv4l-dev autoconf automake
+gcc -Wall v4l2grab.c yuv.c -lv4l2 -ljpeg -o v4l2grab
+
+## basics
+
 [![Travis](http://img.shields.io/travis/twam/v4l2grab/master.svg)](https://travis-ci.org/twam/v4l2grab/)
 [![GitHub license](https://img.shields.io/github/license/twam/v4l2grab.svg)]()
 
